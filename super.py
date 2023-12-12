@@ -7,13 +7,12 @@ class Answer:
 
 
 class Supercomputer(Answer):
-    def __init__(self, answer, name, rank):
+    def __init__(self, answer, rank):
         super().__init__(answer)
-        self.name = name
         self.rank = rank
 
     def __str__(self):
         return f"{self.name} is the {self.rank} ranked computer in the galaxy!"
     
-deepthought = Supercomputer(42 ,"Deep Thought", 1)
+deepthought = Supercomputer("Deep Thought", 1)
 print(deepthought)
